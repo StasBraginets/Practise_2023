@@ -1,0 +1,27 @@
+body{
+	background-image: url("/static/main/img/mainImg.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.check_form{
+
+    text-align: center;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*Виявляється, щоб змінити ширину об'єктів,
+    якщо використовується position, треба використати стиль width
+    після нього.*/
+    width: 25%;
+}
+
+.check{
+    color: white;
+}
+
+.features{
+    color: white;
+}

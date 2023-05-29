@@ -1,0 +1,15 @@
+{% extends 'main/index.html' %}
+
+{% block title %}Перевірка{% endblock %}
+
+{% block content %}
+     <div class="features">
+        <form method="post" class="check_form">
+            {% csrf_token %}
+            <input type="text" placeholder="Nickname" class="form-control" name="nickname"><br>
+            <span class="check">{{ error }}</span><br>
+
+            <button type="submit" class="btn btn-primary">Перевірити</button>
+        </form>
+    </div>
+{% endblock %}
